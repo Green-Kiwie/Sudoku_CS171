@@ -13,7 +13,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 for i in $(seq 3 15); do
     for j in $(seq 0 4); do
-        python3 "$SCRIPT_DIR/bin/Main.pyc" "$@" "$SCRIPT_DIR/../Sudoku_Generator/Boards/${i}_${i}_boards_${j}.txt" | tee >> test_results.txt
+        python3 "$SCRIPT_DIR/bin/Main.pyc" "$@" "$SCRIPT_DIR/../Sudoku_Generator/Boards/${i}_${i}_boards_${j}.txt" >> test_results.txt
     done
 done
 

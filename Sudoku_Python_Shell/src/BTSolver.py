@@ -49,18 +49,41 @@ class BTSolver:
     """
     def forwardChecking ( self ):
         modified = dict()
-        for variable in self.network.getVariables():
+
+        def checkOneVariable(variable):
             if variable.isAssigned():
                 value = variable.getAssignment()
-                for neighbor in self.network.getNeighborsOfVariable(variable):
-                    if neighbor.isAssigned():
-                        continue
-                    if neighbor.getDomain().contains(value):
-                        self.trail.push(neighbor)
-                        neighbor.removeValueFromDomain(value)
-                        modified[neighbor] = neighbor.getDomain()
-                        if neighbor.getDomain().size() == 0:
-                            return (modified, False)                    
+                return checkNeighbours(value, variable)
+            else:
+                return True
+                
+        def checkNeighbours(value, variable):
+            for neighbor in self.network.getNeighborsOfVariable(variable):
+                if updateNeighborDomain(neighbor, value) == False:
+                    return False
+            return True
+
+        def updateNeighborDomain(neighbor, value):
+            if neighbor.isAssigned():
+                return True
+            if neighbor.getDomain().contains(value):
+                self.trail.push(neighbor)
+                neighbor.removeValueFromDomain(value)
+                modified[neighbor] = neighbor.getDomain()
+                if neighbor.getDomain().size() == 0:
+                    return False
+            return True
+
+        firstTimeCheck = self.trail.size() == 0
+        if firstTimeCheck:
+            for variable in self.network.getVariables():
+                if checkOneVariable(variable) == False:
+                    return (modified, False)
+        else:
+            lastEditedVariable = self.trail.trailStack[-1][0]
+            if checkOneVariable(lastEditedVariable) == False:
+                    return (modified, False)
+
         return (modified, True)
 
     # =================================================================
