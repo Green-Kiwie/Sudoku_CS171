@@ -65,7 +65,7 @@ class BTSolver:
 
         def updateNeighborDomain(neighbor, value):
             if neighbor.isAssigned():
-                return True
+                return neighbor.getAssignment() != value
             if neighbor.getDomain().contains(value):
                 self.trail.push(neighbor)
                 neighbor.removeValueFromDomain(value)
