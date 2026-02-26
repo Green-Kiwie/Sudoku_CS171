@@ -6,6 +6,7 @@ import Constraint
 import ConstraintNetwork
 import time
 import random
+import sys
 
 class BTSolver:
 
@@ -153,7 +154,13 @@ class BTSolver:
         Return: The unassigned variable with the smallest domain
     """
     def getMRV ( self ):
-        return None
+        lowest_var = None
+        for variable in self.network.getVariables():
+            if variable.isAssigned():
+                continue
+            elif lowest_var == None or variable.domain.size() < lowest_var.domain.size():
+                lowest_var = variable
+        return lowest_var
 
     """
         Part 2 TODO: Implement the Minimum Remaining Value Heuristic
@@ -164,7 +171,25 @@ class BTSolver:
                 If there is only one variable, return the list of size 1 containing that variable.
     """
     def MRVwithTieBreaker ( self ):
-        return None
+        print("MAD")
+        lowest_var = None
+        for variable in self.network.getVariables():
+            if variable.isAssigned():
+                continue
+            elif lowest_var == None or variable.domain.size() < lowest_var.domain.size():
+                lowest_var = variable
+            elif variable.domain.size() == lowest_var.domain.size():
+                variable_unassigned = 0
+                lowest_var_unassigned = 0
+                for neighbour in self.network.getNeighborsOfVariable(variable):
+                    if not neighbour.assigned:
+                        variable_unassigned += 1
+                for neighbour in self.network.getNeighborsOfVariable(lowest_var):
+                    if not neighbour.assigned:
+                        lowest_var_unassigned += 1
+                if variable_unassigned > lowest_var_unassigned:
+                    lowest_var = variable  
+        return [lowest_var]
 
     """
          Optional TODO: Implement your own advanced Variable Heuristic
@@ -194,7 +219,20 @@ class BTSolver:
                 The LCV is first and the MCV is last
     """
     def getValuesLCVOrder ( self, v ):
-        return None
+        values = []
+        for val in v.domain.values:
+            affect_count = 0
+            for neighbour in self.network.getNeighborsOfVariable(v):
+                if neighbour.domain.contains(val):
+                    affect_count += 1
+            
+            values.append((affect_count, val))
+        
+        sorted_vals = sorted(values)
+        output = []
+        for val in sorted_vals:
+            output.append(val[1])
+        return  output
 
     """
          Optional TODO: Implement your own advanced Value Heuristic
