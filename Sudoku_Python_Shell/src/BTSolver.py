@@ -185,12 +185,14 @@ class BTSolver:
 
             if variable.isAssigned():
                 continue
+
+            neighbor_count = count_neighbors(variable)
             
-            if not lowest_vars or (variable.domain.size() < lowest_size or (variable.domain.size() == lowest_size and count_neighbors(variable) > lowest_neighbors)):
+            if not lowest_vars or (variable.domain.size() < lowest_size or (variable.domain.size() == lowest_size and neighbor_count > lowest_neighbors)):
                 lowest_vars = [variable]
                 lowest_size = variable.domain.size()
-                lowest_neighbors = count_neighbors(variable)
-            elif variable.domain.size() == lowest_size and count_neighbors(variable) == lowest_neighbors:
+                lowest_neighbors = neighbor_count
+            elif variable.domain.size() == lowest_size and neighbor_count == lowest_neighbors:
                 lowest_vars.append(variable)
 
         if not lowest_vars:
