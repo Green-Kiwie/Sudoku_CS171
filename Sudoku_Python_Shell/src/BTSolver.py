@@ -171,25 +171,32 @@ class BTSolver:
                 If there is only one variable, return the list of size 1 containing that variable.
     """
     def MRVwithTieBreaker ( self ):
-        print("MAD")
-        lowest_var = None
+        lowest_vars = []
+        lowest_size, lowest_neighbors = 0, 0
+
+        def count_neighbors(variable):
+            count = 0
+            for neighbor in self.network.getNeighborsOfVariable(variable):
+                if not neighbor.isAssigned():
+                    count += 1
+            return count
+
         for variable in self.network.getVariables():
+
             if variable.isAssigned():
                 continue
-            elif lowest_var == None or variable.domain.size() < lowest_var.domain.size():
-                lowest_var = variable
-            elif variable.domain.size() == lowest_var.domain.size():
-                variable_unassigned = 0
-                lowest_var_unassigned = 0
-                for neighbour in self.network.getNeighborsOfVariable(variable):
-                    if not neighbour.assigned:
-                        variable_unassigned += 1
-                for neighbour in self.network.getNeighborsOfVariable(lowest_var):
-                    if not neighbour.assigned:
-                        lowest_var_unassigned += 1
-                if variable_unassigned > lowest_var_unassigned:
-                    lowest_var = variable  
-        return [lowest_var]
+            
+            if not lowest_vars or (variable.domain.size() < lowest_size or (variable.domain.size() == lowest_size and count_neighbors(variable) > lowest_neighbors)):
+                lowest_vars = [variable]
+                lowest_size = variable.domain.size()
+                lowest_neighbors = count_neighbors(variable)
+            elif variable.domain.size() == lowest_size and count_neighbors(variable) == lowest_neighbors:
+                lowest_vars.append(variable)
+
+        if not lowest_vars:
+            return [None]
+            
+        return lowest_vars
 
     """
          Optional TODO: Implement your own advanced Variable Heuristic
