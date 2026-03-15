@@ -150,14 +150,16 @@ class BTSolver:
             return True
 
         # Rule 1: If a variable is assigned then eliminate that value from the square's neighbors.
+        changed_var = set()
         while queue:
             var = queue.pop()
             if not propagate_from(var):
                 return (newly_assigned, False)
+            changed_var.add(var)
 
         # Repeat Rule 2 + Rule 1 until no more assignments can be made.
         changed = True
-        changed_var = {var}
+        
         while changed:
             changed = False
 
@@ -211,6 +213,7 @@ class BTSolver:
                                 if not neighbor.isAssigned() and neighbor.domain.size() == 1:
                                     singleton_val = neighbor.domain.values[0]
                                     self.trail.push(neighbor)
+                                    changed_var.add(neighbor)
                                     neighbor.assignValue(singleton_val)
                                     newly_assigned[neighbor] = singleton_val
                                     if not propagate_from(neighbor):
