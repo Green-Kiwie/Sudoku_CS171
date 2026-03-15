@@ -124,6 +124,7 @@ class BTSolver:
                 The bool is true if assignment is consistent, false otherwise.
     """
     def norvigCheck ( self ):
+
         newly_assigned = dict()
 
         if self.trail.size() == 0:
@@ -156,11 +157,18 @@ class BTSolver:
 
         # Repeat Rule 2 + Rule 1 until no more assignments can be made.
         changed = True
+        changed_var = {var}
         while changed:
             changed = False
 
             # Scan each constraint (row, col, box)
-            for c in self.network.getConstraints():
+            constraintsToCheck = []
+            for v in changed_var:
+                constraintsToCheck.extend(self.network.getConstraintsContainingVariable(v))
+            
+
+
+            for c in constraintsToCheck:
                 assigned_vals = set()
                 val_count = {}   # value -> number of unassigned vars that can take it
                 val_to_var = {}  # value -> the unique unassigned var that can take it (if count == 1)
@@ -184,10 +192,12 @@ class BTSolver:
                                 val_to_var[val] = var
 
                 # Now, for any value that appears in exactly one unassigned variable's domain, assign it there
+                changed_var = set()
                 for val, cnt in val_count.items():
                     if cnt == 1 and val not in assigned_vals:
                         v = val_to_var[val]
                         if not v.isAssigned():
+                            changed_var.add(v)
                             self.trail.push(v)
                             v.assignValue(val)
                             newly_assigned[v] = val
@@ -210,6 +220,93 @@ class BTSolver:
                             changed = True
 
         return (newly_assigned, True)
+
+        # newly_assigned = dict()
+
+        # if self.trail.size() == 0:
+        #     queue = [v for v in self.network.getVariables() if v.isAssigned()]
+        # else:
+        #     last_var = self.trail.trailStack[-1][0]
+        #     queue = [last_var] if last_var.isAssigned() else []
+
+        # def propagate_from(var):
+        #     value = var.getAssignment()
+        #     for neighbor in self.network.getNeighborsOfVariable(var):
+        #         if neighbor.isAssigned():
+        #             if neighbor.getAssignment() == value:
+        #                 return False
+        #             continue
+
+        #         neighbor_domain = neighbor.getDomain()
+        #         if neighbor_domain.contains(value):
+        #             self.trail.push(neighbor)
+        #             neighbor.removeValueFromDomain(value)
+        #             if neighbor.domain.size() == 0:
+        #                 return False
+        #     return True
+
+        # # Rule 1: If a variable is assigned then eliminate that value from the square's neighbors.
+        # while queue:
+        #     var = queue.pop()
+        #     if not propagate_from(var):
+        #         return (newly_assigned, False)
+
+        # # Repeat Rule 2 + Rule 1 until no more assignments can be made.
+        # changed = True
+        # while changed:
+        #     changed = False
+
+        #     # Scan each constraint (row, col, box)
+        #     for c in self.network.getConstraints():
+        #         assigned_vals = set()
+        #         val_count = {}   # value -> number of unassigned vars that can take it
+        #         val_to_var = {}  # value -> the unique unassigned var that can take it (if count == 1)
+
+        #         # Examine variables in this constraint
+        #         for var in c.vars:
+        #             if var.isAssigned():
+        #                 val = var.getAssignment()
+        #                 # If the same value appears twice in this constraint -> inconsistent
+        #                 if val in assigned_vals:
+        #                     return (newly_assigned, False)
+        #                 assigned_vals.add(val)
+        #             else:
+        #                 # Only look at domain values that are not already used in the unit
+        #                 for val in var.getDomain().values:
+        #                     if val in assigned_vals:
+        #                         continue
+        #                     cnt = val_count.get(val, 0) + 1
+        #                     val_count[val] = cnt
+        #                     if cnt == 1:
+        #                         val_to_var[val] = var
+
+        #         # Now, for any value that appears in exactly one unassigned variable's domain, assign it there
+        #         for val, cnt in val_count.items():
+        #             if cnt == 1 and val not in assigned_vals:
+        #                 v = val_to_var[val]
+        #                 if not v.isAssigned():
+        #                     self.trail.push(v)
+        #                     v.assignValue(val)
+        #                     newly_assigned[v] = val
+
+        #                     # This new assignment must propagate to neighbors via Rule (1)
+        #                     if not propagate_from(v):
+        #                         return (newly_assigned, False)
+
+        #                     # Check for singleton neighbors (domain size 1) created by propagation
+        #                     for neighbor in self.network.getNeighborsOfVariable(v):
+        #                         if not neighbor.isAssigned() and neighbor.domain.size() == 1:
+        #                             singleton_val = neighbor.domain.values[0]
+        #                             self.trail.push(neighbor)
+        #                             neighbor.assignValue(singleton_val)
+        #                             newly_assigned[neighbor] = singleton_val
+        #                             if not propagate_from(neighbor):
+        #                                 return (newly_assigned, False)
+
+        #                     # Re-scan constraints if assignment made
+        #                     changed = True
+
+        # return (newly_assigned, True)
 
     """
          Optional TODO: Implement your own advanced Constraint Propagation
