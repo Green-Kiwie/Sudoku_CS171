@@ -7,6 +7,7 @@ import ConstraintNetwork
 import time
 import random
 import sys
+from collections import deque
 
 class BTSolver:
 
@@ -158,19 +159,27 @@ class BTSolver:
             changed_var.add(var)
 
         # Repeat Rule 2 + Rule 1 until no more assignments can be made.
-        changed = True
+        # changed = True
+        queue = deque()
+        queued_set = set()
+        for v in changed_var:
+            for con in self.network.getConstraintsContainingVariable(v):
+                if con not in queued_set:
+                    queue.append(con)
+                    queued_set.add(con)
         
-        while changed:
-            changed = False
+        while queue:
+            # changed = False
 
             # Scan each constraint (row, col, box)
-            constraintsToCheck = []
-            for v in changed_var:
-                constraintsToCheck.extend(self.network.getConstraintsContainingVariable(v))
+            # constraintsToCheck = []
+            # for v in changed_var:
+            #     constraintsToCheck.extend(self.network.getConstraintsContainingVariable(v))
             
 
-
-            for c in constraintsToCheck:
+                c = queue.popleft()
+                queued_set.remove(c)
+            # for c in constraintsToCheck:
                 assigned_vals = set()
                 val_count = {}   # value -> number of unassigned vars that can take it
                 val_to_var = {}  # value -> the unique unassigned var that can take it (if count == 1)
@@ -194,12 +203,15 @@ class BTSolver:
                                 val_to_var[val] = var
 
                 # Now, for any value that appears in exactly one unassigned variable's domain, assign it there
-                changed_var = set()
+                # changed_var = set()
                 for val, cnt in val_count.items():
                     if cnt == 1 and val not in assigned_vals:
                         v = val_to_var[val]
                         if not v.isAssigned():
-                            changed_var.add(v)
+                            for con in self.network.getConstraintsContainingVariable(v):
+                                if con not in queued_set:
+                                    queued_set.add(con)
+                                    queue.append(con)
                             self.trail.push(v)
                             v.assignValue(val)
                             newly_assigned[v] = val
@@ -213,14 +225,17 @@ class BTSolver:
                                 if not neighbor.isAssigned() and neighbor.domain.size() == 1:
                                     singleton_val = neighbor.domain.values[0]
                                     self.trail.push(neighbor)
-                                    changed_var.add(neighbor)
+                                    for con in self.network.getConstraintsContainingVariable(neighbor):
+                                        if con not in queued_set:
+                                            queued_set.add(con)
+                                            queue.append(con)
                                     neighbor.assignValue(singleton_val)
                                     newly_assigned[neighbor] = singleton_val
                                     if not propagate_from(neighbor):
                                         return (newly_assigned, False)
 
                             # Re-scan constraints if assignment made
-                            changed = True
+                            # changed = True
 
         return (newly_assigned, True)
 
