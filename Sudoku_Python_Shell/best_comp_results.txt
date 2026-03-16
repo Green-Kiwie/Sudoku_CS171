@@ -13,18 +13,18 @@ p:3	q:3
 
 p:3	q:3
 1 8 4 | 9 6 5 | 7 2 3 
-9 6 2 | 1 3 7 | 8 4 5 
-7 5 3 | 8 2 4 | 1 6 9 
+9 6 2 | 1 7 3 | 8 4 5 
+7 3 5 | 8 2 4 | 1 6 9 
 - - - - - - - - - - - 
-4 3 1 | 6 8 2 | 9 5 7 
-8 7 5 | 4 1 9 | 2 3 6 
-2 9 6 | 5 7 3 | 4 8 1 
+4 2 1 | 6 3 8 | 5 9 7 
+8 5 7 | 4 9 1 | 2 3 6 
+3 9 6 | 7 5 2 | 4 8 1 
 - - - - - - - - - - - 
-5 2 7 | 3 4 1 | 6 9 8 
-3 4 8 | 7 9 6 | 5 1 2 
-6 1 9 | 2 5 8 | 3 7 4 
+2 7 9 | 5 4 6 | 3 1 8 
+6 4 8 | 3 1 7 | 9 5 2 
+5 1 3 | 2 8 9 | 6 7 4 
 
-Trail Pushes: 415
+Trail Pushes: 426
 Backtracks: 0
 p:3	q:3
 0 0 0 | 0 8 0 | 0 0 0 
@@ -40,19 +40,19 @@ p:3	q:3
 0 0 0 | 0 0 0 | 0 0 4 
 
 p:3	q:3
-5 2 1 | 9 8 4 | 7 6 3 
-4 6 7 | 5 3 1 | 8 9 2 
-8 3 9 | 6 7 2 | 5 4 1 
+7 6 1 | 5 8 4 | 3 2 9 
+4 2 9 | 6 3 1 | 5 7 8 
+5 3 8 | 7 9 2 | 1 4 6 
 - - - - - - - - - - - 
-1 4 2 | 3 5 7 | 6 8 9 
-6 7 3 | 8 4 9 | 2 1 5 
-9 8 5 | 1 2 6 | 4 3 7 
+9 4 2 | 3 5 7 | 6 8 1 
+6 1 3 | 8 4 9 | 2 5 7 
+8 7 5 | 1 2 6 | 4 9 3 
 - - - - - - - - - - - 
-2 9 4 | 7 1 8 | 3 5 6 
-7 5 6 | 4 9 3 | 1 2 8 
-3 1 8 | 2 6 5 | 9 7 4 
+2 9 7 | 4 1 3 | 8 6 5 
+1 8 4 | 9 6 5 | 7 3 2 
+3 5 6 | 2 7 8 | 9 1 4 
 
-Trail Pushes: 394
+Trail Pushes: 415
 Backtracks: 0
 p:3	q:3
 3 0 0 | 0 0 0 | 0 0 0 
@@ -68,19 +68,19 @@ p:3	q:3
 0 0 0 | 5 0 0 | 0 0 0 
 
 p:3	q:3
-3 5 4 | 9 2 6 | 7 1 8 
-1 2 9 | 8 4 7 | 3 6 5 
-8 6 7 | 3 1 5 | 9 2 4 
+3 7 5 | 2 4 6 | 9 1 8 
+8 4 9 | 3 1 5 | 2 6 7 
+1 2 6 | 8 9 7 | 4 3 5 
 - - - - - - - - - - - 
 7 9 3 | 4 5 2 | 6 8 1 
-6 4 8 | 1 3 9 | 2 5 7 
-5 1 2 | 7 6 8 | 4 3 9 
+2 6 8 | 1 3 9 | 7 5 4 
+5 1 4 | 6 7 8 | 3 9 2 
 - - - - - - - - - - - 
-9 3 1 | 6 8 4 | 5 7 2 
-4 8 5 | 2 7 3 | 1 9 6 
-2 7 6 | 5 9 1 | 8 4 3 
+6 8 1 | 9 2 4 | 5 7 3 
+9 5 2 | 7 8 3 | 1 4 6 
+4 3 7 | 5 6 1 | 8 2 9 
 
-Trail Pushes: 427
+Trail Pushes: 413
 Backtracks: 0
 p:3	q:3
 0 0 0 | 0 3 0 | 0 0 0 
@@ -96,17 +96,17 @@ p:3	q:3
 0 3 0 | 5 0 0 | 0 8 9 
 
 p:3	q:3
-6 5 9 | 2 3 7 | 4 1 8 
-7 1 8 | 4 5 6 | 9 3 2 
-3 2 4 | 9 8 1 | 6 7 5 
+6 5 4 | 2 3 8 | 9 1 7 
+7 8 1 | 6 5 9 | 4 3 2 
+3 2 9 | 4 1 7 | 8 6 5 
 - - - - - - - - - - - 
-1 6 3 | 8 4 5 | 2 9 7 
-2 4 7 | 1 6 9 | 8 5 3 
-8 9 5 | 7 2 3 | 1 6 4 
+2 9 5 | 8 4 6 | 1 7 3 
+8 6 7 | 1 9 3 | 2 5 4 
+4 1 3 | 7 2 5 | 6 9 8 
 - - - - - - - - - - - 
-5 7 2 | 6 9 8 | 3 4 1 
-9 8 1 | 3 7 4 | 5 2 6 
-4 3 6 | 5 1 2 | 7 8 9 
+5 7 6 | 9 8 2 | 3 4 1 
+9 4 8 | 3 7 1 | 5 2 6 
+1 3 2 | 5 6 4 | 7 8 9 
 
 Trail Pushes: 417
 Backtracks: 0
@@ -124,19 +124,19 @@ p:3	q:3
 0 1 0 | 0 0 0 | 0 0 0 
 
 p:3	q:3
-7 5 8 | 1 3 9 | 2 4 6 
-4 6 3 | 7 8 2 | 5 9 1 
-1 9 2 | 6 5 4 | 7 8 3 
+1 5 8 | 7 4 9 | 2 6 3 
+4 6 7 | 2 8 3 | 5 9 1 
+2 9 3 | 6 5 1 | 7 4 8 
 - - - - - - - - - - - 
-9 8 5 | 2 4 6 | 1 3 7 
-6 4 1 | 3 7 8 | 9 2 5 
-3 2 7 | 9 1 5 | 8 6 4 
+6 4 5 | 3 9 8 | 1 2 7 
+3 7 1 | 4 2 6 | 8 5 9 
+8 2 9 | 1 7 5 | 4 3 6 
 - - - - - - - - - - - 
-8 7 6 | 4 2 1 | 3 5 9 
-2 3 9 | 5 6 7 | 4 1 8 
-5 1 4 | 8 9 3 | 6 7 2 
+9 8 6 | 5 1 2 | 3 7 4 
+7 3 2 | 8 6 4 | 9 1 5 
+5 1 4 | 9 3 7 | 6 8 2 
 
-Trail Pushes: 425
+Trail Pushes: 417
 Backtracks: 0
 p:3	q:4
 0 0 0 0 | 0 0 0 0 | 0 0 B 0 
@@ -156,24 +156,24 @@ p:3	q:4
 0 0 0 0 | 0 0 0 0 | 0 0 0 0 
 
 p:3	q:4
-9 1 6 A | 2 5 4 8 | 3 7 B C 
-5 C 7 4 | B 3 6 1 | A 8 9 2 
-8 2 3 B | C 9 7 A | 4 1 5 6 
+8 1 4 C | 2 5 9 3 | 6 7 B A 
+2 5 7 A | B 8 6 C | 9 1 3 4 
+6 9 3 B | 1 4 7 A | C 8 2 5 
 - - - - - - - - - - - - - - 
-1 7 B C | 3 2 9 4 | 8 6 A 5 
-A 3 9 6 | 7 8 5 C | B 2 1 4 
-2 5 4 8 | 6 1 A B | 9 3 C 7 
+7 A 8 1 | 3 2 5 9 | 4 B 6 C 
+4 C 9 6 | 7 A 8 B | 5 2 1 3 
+B 2 5 3 | 6 1 C 4 | 8 9 A 7 
 - - - - - - - - - - - - - - 
-C 4 5 9 | 8 6 1 2 | 7 A 3 B 
-3 A 2 7 | 5 4 B 9 | 1 C 6 8 
-B 6 8 1 | A 7 C 3 | 2 5 4 9 
+A 6 B 9 | 8 7 4 2 | 3 C 5 1 
+3 4 1 5 | 9 C B 6 | 2 A 7 8 
+C 7 2 8 | 5 3 A 1 | B 6 4 9 
 - - - - - - - - - - - - - - 
-4 8 C 2 | 1 B 3 6 | 5 9 7 A 
-6 9 1 5 | 4 A 2 7 | C B 8 3 
-7 B A 3 | 9 C 8 5 | 6 4 2 1 
+9 B C 7 | A 6 3 5 | 1 4 8 2 
+5 8 6 2 | 4 9 1 7 | A 3 C B 
+1 3 A 4 | C B 2 8 | 7 5 9 6 
 
-Trail Pushes: 1152
-Backtracks: 0
+Trail Pushes: 1166
+Backtracks: 1
 p:3	q:4
 0 2 0 0 | 0 0 0 0 | 0 0 0 0 
 A 0 5 0 | 0 0 0 0 | 0 0 0 0 
@@ -192,23 +192,23 @@ A 0 5 0 | 0 0 0 0 | 0 0 0 0
 0 0 0 0 | 0 0 0 B | 0 0 0 0 
 
 p:3	q:4
-1 2 7 3 | A 5 C 4 | B 6 8 9 
-A B 5 4 | 6 3 8 9 | 2 7 C 1 
-8 C 6 9 | 2 B 7 1 | 3 4 5 A 
+1 2 7 B | 4 5 9 C | 6 A 3 8 
+A 3 5 4 | 2 B 8 6 | 1 7 9 C 
+8 C 6 9 | A 3 7 1 | 2 4 5 B 
 - - - - - - - - - - - - - - 
-5 9 A 2 | B 1 4 6 | C 8 3 7 
-C 4 8 B | 7 A 2 3 | 9 1 6 5 
-6 7 3 1 | C 9 5 8 | A B 4 2 
+6 4 B A | 7 1 2 3 | 5 C 8 9 
+2 5 9 8 | 6 C B 4 | A 1 7 3 
+3 7 C 1 | 9 8 A 5 | 4 6 B 2 
 - - - - - - - - - - - - - - 
-3 5 9 C | 4 8 6 A | 1 2 7 B 
-B 6 4 7 | 9 2 1 5 | 8 3 A C 
-2 A 1 8 | 3 7 B C | 4 5 9 6 
+7 9 4 3 | B 2 5 A | C 8 1 6 
+B 6 8 5 | 1 4 C 7 | 3 9 2 A 
+C A 1 2 | 3 9 6 8 | B 5 4 7 
 - - - - - - - - - - - - - - 
-4 3 B 6 | 5 C 9 2 | 7 A 1 8 
-9 1 2 A | 8 6 3 7 | 5 C B 4 
-7 8 C 5 | 1 4 A B | 6 9 2 3 
+9 B A 6 | 5 7 4 2 | 8 3 C 1 
+5 1 2 C | 8 A 3 9 | 7 B 6 4 
+4 8 3 7 | C 6 1 B | 9 2 A 5 
 
-Trail Pushes: 1158
+Trail Pushes: 1181
 Backtracks: 0
 p:3	q:4
 0 0 0 4 | 0 0 0 0 | 0 0 0 0 
@@ -228,23 +228,23 @@ p:3	q:4
 0 0 0 0 | 0 0 0 0 | 0 0 0 0 
 
 p:3	q:4
-6 5 1 4 | B 3 7 8 | C A 9 2 
-7 C 3 A | 9 5 4 2 | 1 6 B 8 
-B 8 9 2 | 6 C 1 A | 5 4 3 7 
+6 1 3 4 | 9 A C 2 | 5 7 8 B 
+8 C 5 A | B 7 1 4 | 6 3 9 2 
+9 B 7 2 | 8 5 3 6 | 1 C A 4 
 - - - - - - - - - - - - - - 
-4 1 2 C | 8 A B 7 | 9 3 6 5 
-5 3 B 6 | 2 9 C 1 | 8 7 A 4 
-8 9 A 7 | 5 4 6 3 | 2 1 C B 
+2 3 1 C | 5 9 B 8 | 7 A 4 6 
+4 7 8 5 | 3 6 2 A | 9 1 B C 
+B 9 A 6 | 4 C 7 1 | 2 5 3 8 
 - - - - - - - - - - - - - - 
-A B 6 5 | C 7 8 9 | 4 2 1 3 
-2 7 8 9 | 4 1 3 B | 6 C 5 A 
-1 4 C 3 | A 2 5 6 | B 8 7 9 
+A 5 6 7 | C 8 9 B | 4 2 1 3 
+C 4 2 9 | 1 3 6 7 | 8 B 5 A 
+1 8 B 3 | 2 4 A 5 | C 6 7 9 
 - - - - - - - - - - - - - - 
-3 2 5 1 | 7 8 9 C | A B 4 6 
-C 6 4 8 | 3 B A 5 | 7 9 2 1 
-9 A 7 B | 1 6 2 4 | 3 5 8 C 
+3 2 4 1 | 7 B 8 C | A 9 6 5 
+5 6 C B | A 1 4 9 | 3 8 2 7 
+7 A 9 8 | 6 2 5 3 | B 4 C 1 
 
-Trail Pushes: 1181
+Trail Pushes: 1145
 Backtracks: 0
 p:3	q:4
 4 0 0 0 | 0 6 0 0 | 0 0 0 0 
@@ -264,23 +264,23 @@ p:3	q:4
 0 0 0 0 | 0 0 0 0 | 0 0 4 0 
 
 p:3	q:4
-4 A 2 B | 9 6 8 7 | 3 5 C 1 
-5 6 1 7 | C 3 A 2 | 4 9 8 B 
-8 C 3 9 | 1 B 5 4 | 6 2 A 7 
+4 2 8 B | A 6 3 C | 5 1 7 9 
+7 1 6 9 | 5 8 4 2 | C 3 B A 
+5 C 3 A | 9 B 7 1 | 6 4 2 8 
 - - - - - - - - - - - - - - 
-1 2 4 8 | B A 3 C | 7 6 5 9 
-B 3 6 5 | 8 4 7 9 | A C 1 2 
-7 9 C A | 2 5 6 1 | 8 B 3 4 
+2 7 B 1 | C 5 6 3 | 8 A 9 4 
+8 A 4 5 | 1 7 B 9 | 3 6 C 2 
+3 6 9 C | 8 A 2 4 | 7 B 1 5 
 - - - - - - - - - - - - - - 
-2 4 8 C | A 9 B 5 | 1 3 7 6 
-3 B 5 1 | 7 C 4 6 | 9 A 2 8 
-9 7 A 6 | 3 2 1 8 | C 4 B 5 
+C 3 7 4 | B 9 8 5 | 1 2 A 6 
+6 B 1 8 | 2 C A 7 | 4 9 5 3 
+9 5 A 2 | 4 3 1 6 | B C 8 7 
 - - - - - - - - - - - - - - 
-A 5 7 3 | 4 1 9 B | 2 8 6 C 
-C 8 B 4 | 6 7 2 A | 5 1 9 3 
-6 1 9 2 | 5 8 C 3 | B 7 4 A 
+A 4 5 3 | 7 1 9 B | 2 8 6 C 
+1 8 2 7 | 6 4 C A | 9 5 3 B 
+B 9 C 6 | 3 2 5 8 | A 7 4 1 
 
-Trail Pushes: 1184
+Trail Pushes: 1177
 Backtracks: 0
 p:3	q:4
 0 0 0 0 | 0 0 0 7 | 2 0 0 0 
@@ -300,24 +300,24 @@ p:3	q:4
 0 0 0 5 | 0 0 7 0 | 0 0 0 0 
 
 p:3	q:4
-5 9 6 4 | 8 1 C 7 | 2 3 A B 
-7 1 2 B | 6 5 3 A | 4 9 C 8 
-A 3 8 C | 2 B 9 4 | 6 1 7 5 
+8 6 A 1 | 3 4 B 7 | 2 5 9 C 
+2 3 B 7 | 5 9 8 C | 6 1 A 4 
+9 5 C 4 | 2 6 1 A | 7 3 B 8 
 - - - - - - - - - - - - - - 
-B 7 9 6 | 4 8 A C | 3 5 2 1 
-8 4 5 2 | 1 3 6 B | C 7 9 A 
-C A 1 3 | 7 9 2 5 | B 4 8 6 
+5 7 8 6 | B 3 4 1 | C 9 2 A 
+B 4 9 2 | 8 C A 6 | 1 7 5 3 
+C A 1 3 | 7 5 2 9 | B 8 4 6 
 - - - - - - - - - - - - - - 
-1 8 3 9 | C 4 B 2 | 5 A 6 7 
-4 5 B 7 | 9 A 1 6 | 8 2 3 C 
-2 6 C A | 3 7 5 8 | 9 B 1 4 
+1 2 6 9 | 4 B C 3 | 5 A 8 7 
+7 B 3 8 | 1 A 5 2 | 4 6 C 9 
+4 C 5 A | 6 7 9 8 | 3 B 1 2 
 - - - - - - - - - - - - - - 
-3 B 7 1 | 5 C 8 9 | A 6 4 2 
-9 2 A 8 | B 6 4 1 | 7 C 5 3 
-6 C 4 5 | A 2 7 3 | 1 8 B 9 
+A 1 7 B | 9 2 6 4 | 8 C 3 5 
+6 8 2 C | A 1 3 5 | 9 4 7 B 
+3 9 4 5 | C 8 7 B | A 2 6 1 
 
-Trail Pushes: 1197
-Backtracks: 1
+Trail Pushes: 1175
+Backtracks: 0
 p:4	q:4
 0 0 0 0 | 0 0 0 0 | 0 0 0 B | 7 0 0 0 
 0 0 0 0 | 0 0 B 0 | 0 0 0 0 | 1 0 0 0 
@@ -340,27 +340,27 @@ p:4	q:4
 0 0 0 0 | 0 0 0 0 | 0 0 0 0 | 0 0 0 0 
 
 p:4	q:4
-9 6 5 E | A C 1 D | 3 F 4 B | 7 G 2 8 
-3 2 F C | 6 8 B 5 | A G 7 9 | 1 D 4 E 
-B 8 7 G | 2 3 4 E | C D 5 1 | A F 9 6 
-A 4 1 D | F 9 7 G | E 6 2 8 | 5 B 3 C 
+C 5 2 3 | G 4 1 6 | D 8 E B | 7 F 9 A 
+8 E 4 6 | C 3 B 5 | A F 7 9 | 1 2 G D 
+B 1 G 9 | F A 7 D | C 2 5 3 | 4 8 E 6 
+A F 7 D | 8 9 2 E | 1 G 4 6 | 5 B 3 C 
 - - - - - - - - - - - - - - - - - - - 
-1 3 E F | 9 5 D 6 | 4 C B 2 | 8 7 A G 
-8 5 G 6 | 4 1 A B | 7 9 F E | D 3 C 2 
-4 A 9 2 | C 7 8 F | D 1 G 3 | 6 E B 5 
-D C B 7 | 3 G E 2 | 5 8 A 6 | 9 4 1 F 
+5 3 6 F | B D 8 G | 9 C 1 2 | E 7 A 4 
+9 4 A B | 6 5 E 1 | F 7 3 D | C G 8 2 
+2 C 1 E | 9 7 4 F | 8 6 G A | B 3 D 5 
+G D 8 7 | A C 3 2 | 5 4 B E | 6 9 1 F 
 - - - - - - - - - - - - - - - - - - - 
-2 B 6 9 | 8 F C 3 | 1 A E 4 | G 5 D 7 
-G 7 D 1 | 5 B 2 A | 8 3 6 F | 4 C E 9 
-5 E 3 8 | D 4 9 1 | 2 7 C G | F A 6 B 
-C F A 4 | G E 6 7 | 9 B D 5 | 3 2 8 1 
+6 9 D A | 1 F C 3 | 2 E 8 5 | G 4 7 B 
+1 2 B 4 | 5 G 9 A | 7 3 D F | 8 C 6 E 
+3 7 5 C | E 8 D 4 | G B 6 1 | F A 2 9 
+E G F 8 | 2 B 6 7 | 4 A 9 C | D 1 5 3 
 - - - - - - - - - - - - - - - - - - - 
-6 D C 5 | 1 2 3 4 | F E 8 7 | B 9 G A 
-F 1 2 A | B D G 9 | 6 5 3 C | E 8 7 4 
-E G 8 3 | 7 6 F C | B 4 9 A | 2 1 5 D 
-7 9 4 B | E A 5 8 | G 2 1 D | C 6 F 3 
+4 B 3 2 | D 6 A 8 | E 1 F 7 | 9 5 C G 
+F 6 E 5 | 4 1 G C | 3 9 2 8 | A D B 7 
+7 8 C G | 3 E 5 9 | B D A 4 | 2 6 F 1 
+D A 9 1 | 7 2 F B | 6 5 C G | 3 E 4 8 
 
-Trail Pushes: 2728
+Trail Pushes: 2755
 Backtracks: 0
 p:4	q:4
 0 0 0 C | 0 0 0 0 | 0 0 0 0 | E 3 0 1 
@@ -384,28 +384,28 @@ p:4	q:4
 0 0 0 0 | 0 0 0 0 | 0 0 0 0 | 0 0 0 0 
 
 p:4	q:4
-6 B 9 C | 7 D G 2 | 4 8 A F | E 3 5 1 
-A 2 F 4 | 8 6 1 3 | 5 B E 7 | C D G 9 
-1 3 5 E | 4 A 9 C | 6 2 D G | 8 7 B F 
-7 D 8 G | F 5 E B | 1 C 9 3 | A 2 6 4 
+6 4 9 C | 7 8 2 B | D G A F | E 3 5 1 
+A 2 3 5 | E C 4 9 | 8 B 1 6 | 7 F D G 
+B F 7 8 | 1 6 D G | 5 3 2 E | A 4 C 9 
+1 D E G | F 5 3 A | 4 7 C 9 | 8 2 6 B 
 - - - - - - - - - - - - - - - - - - - 
-G C 3 9 | 1 7 6 F | E 5 B 2 | 4 8 D A 
-F 5 D 2 | 9 4 A E | 3 7 C 8 | G 6 1 B 
-4 8 B A | 3 G 2 5 | D F 1 6 | 9 E C 7 
-E 6 1 7 | D C B 8 | 9 4 G A | 2 F 3 5 
+8 C 4 9 | G E A 5 | B D F 1 | 2 6 7 3 
+2 3 B 1 | D F C 6 | G E 7 5 | 9 A 4 8 
+D 7 F A | 9 4 B 8 | 6 C 3 2 | G E 1 5 
+E 5 G 6 | 3 7 1 2 | 9 4 8 A | F D B C 
 - - - - - - - - - - - - - - - - - - - 
-3 F 4 5 | 6 B D 9 | C G 2 1 | 7 A 8 E 
-8 G 7 6 | C F 4 1 | A E 3 9 | B 5 2 D 
-2 1 A D | 5 E 3 7 | B 6 8 4 | F C 9 G 
-C 9 E B | G 2 8 A | F D 7 5 | 3 1 4 6 
+7 9 5 3 | 2 A 6 4 | F 1 B D | C G 8 E 
+C 8 D E | B 1 G 3 | 2 A 9 7 | 6 5 F 4 
+G 1 A B | 5 D 8 F | C 6 E 4 | 3 7 9 2 
+F 6 2 4 | C 9 E 7 | 3 5 G 8 | 1 B A D 
 - - - - - - - - - - - - - - - - - - - 
-9 7 C F | 2 3 5 6 | G A 4 D | 1 B E 8 
-B E G 8 | A 9 F D | 2 1 6 C | 5 4 7 3 
-D A 2 3 | B 1 7 4 | 8 9 5 E | 6 G F C 
-5 4 6 1 | E 8 C G | 7 3 F B | D 9 A 2 
+9 A 6 7 | 8 3 5 E | 1 2 4 B | D C G F 
+3 B 1 2 | 6 G 9 D | 7 F 5 C | 4 8 E A 
+5 E C F | 4 2 7 1 | A 8 D G | B 9 3 6 
+4 G 8 D | A B F C | E 9 6 3 | 5 1 2 7 
 
-Trail Pushes: 2768
-Backtracks: 1
+Trail Pushes: 2725
+Backtracks: 0
 p:4	q:4
 0 0 0 0 | 0 0 0 0 | 0 0 6 0 | 0 0 0 0 
 0 0 0 0 | G 0 0 0 | 0 0 0 0 | 0 0 0 0 
@@ -428,28 +428,28 @@ p:4	q:4
 0 0 0 0 | 0 0 0 3 | 0 0 0 0 | 0 0 0 0 
 
 p:4	q:4
-E 8 9 D | B 7 4 5 | G 3 6 1 | C F A 2 
-C A 4 3 | G 6 1 9 | F E 2 B | 5 D 7 8 
-2 5 B 6 | 8 E F D | A C 4 7 | G 1 3 9 
-1 7 G F | 3 C 2 A | D 9 5 8 | 4 B E 6 
+2 8 4 C | F 7 5 D | G 3 6 1 | A B E 9 
+7 3 5 9 | G A E 2 | F C 4 B | 1 D 8 6 
+6 B D 1 | 3 C 4 9 | A E 2 8 | F G 7 5 
+A E G F | 6 8 1 B | 7 D 5 9 | 4 2 C 3 
 - - - - - - - - - - - - - - - - - - - 
-9 6 7 E | 1 D 3 C | B F G 4 | 2 5 8 A 
-8 B 2 A | 6 F G 4 | 7 5 E 3 | 1 9 C D 
-4 3 1 5 | E B 8 2 | 9 A D C | F 6 G 7 
-D F C G | 5 9 A 7 | 8 6 1 2 | E 3 B 4 
+1 A E 3 | C D 6 7 | B F G 4 | 5 9 2 8 
+9 D C 6 | 1 B 2 G | 8 5 E 3 | 7 F 4 A 
+4 7 B 5 | 8 F 3 A | 9 6 1 2 | C E D G 
+F G 8 2 | E 4 9 5 | D A 7 C | 6 3 B 1 
 - - - - - - - - - - - - - - - - - - - 
-G E 6 9 | 7 2 B F | 3 4 A 5 | D 8 1 C 
-3 1 D 8 | 4 5 C E | 2 B 7 F | 9 A 6 G 
-A 4 5 B | 9 3 D 1 | C G 8 6 | 7 E 2 F 
-7 2 F C | A G 6 8 | 1 D 9 E | 3 4 5 B 
+C 1 F 8 | 9 2 B E | 3 4 A 5 | D 6 G 7 
+3 6 7 A | D 5 G 8 | 2 B 9 F | E C 1 4 
+D 4 2 E | 7 3 F 1 | C G 8 6 | 9 5 A B 
+G 5 9 B | A 6 C 4 | 1 7 D E | 2 8 3 F 
 - - - - - - - - - - - - - - - - - - - 
-6 D 8 2 | C 1 5 B | 4 7 3 9 | A G F E 
-5 C E 1 | 2 A 9 G | 6 8 F D | B 7 4 3 
-F G 3 7 | D 4 E 6 | 5 2 B A | 8 C 9 1 
-B 9 A 4 | F 8 7 3 | E 1 C G | 6 2 D 5 
+B 9 6 D | 5 G 7 C | 4 2 3 A | 8 1 F E 
+8 C 3 4 | 2 E A 6 | 5 1 F G | B 7 9 D 
+5 2 1 G | 4 9 D F | E 8 B 7 | 3 A 6 C 
+E F A 7 | B 1 8 3 | 6 9 C D | G 4 5 2 
 
-Trail Pushes: 2789
-Backtracks: 9
+Trail Pushes: 2694
+Backtracks: 0
 p:4	q:4
 0 0 0 0 | 0 0 0 0 | 0 0 0 0 | 0 1 0 0 
 0 D 0 0 | 0 0 0 0 | 0 0 0 0 | 0 0 0 0 
@@ -472,27 +472,27 @@ p:4	q:4
 0 0 7 0 | 0 0 0 0 | 0 0 0 0 | 0 0 0 0 
 
 p:4	q:4
-C 7 2 3 | F G 4 6 | D 8 9 5 | E 1 A B 
-B D G 9 | 8 5 2 A | C 1 4 E | 7 F 6 3 
-5 F A 8 | C 1 E 7 | B 2 6 3 | 4 G 9 D 
-E 1 4 6 | 3 9 D B | A F G 7 | C 2 8 5 
+8 9 C G | F 4 5 6 | 2 7 D 3 | E 1 A B 
+A D 4 1 | 7 3 2 9 | E 5 6 B | 8 F C G 
+5 F B 7 | 8 C G E | A 1 9 4 | 6 2 3 D 
+2 3 6 E | A D 1 B | C 8 F G | 9 7 4 5 
 - - - - - - - - - - - - - - - - - - - 
-9 4 1 7 | A B 5 8 | E 3 C 2 | 6 D G F 
-G 2 3 C | 9 D 7 E | 6 5 B F | 8 4 1 A 
-6 A 5 B | 1 3 F 2 | G D 8 4 | 9 C 7 E 
-F 8 D E | 6 C G 4 | 9 7 A 1 | 5 3 B 2 
+D 2 8 B | 3 9 6 A | 7 E 1 C | 5 4 G F 
+G E 9 C | B F 8 D | 5 3 4 2 | 7 6 1 A 
+3 6 A 4 | 1 5 7 2 | B F G 9 | C 8 D E 
+F 7 1 5 | C G E 4 | 6 D 8 A | 3 9 B 2 
 - - - - - - - - - - - - - - - - - - - 
-1 5 E 4 | 2 A 3 9 | F G 7 8 | D B C 6 
-2 3 6 A | B 7 1 G | 5 9 D C | F 8 E 4 
-7 C F G | D 8 6 5 | 4 E 2 B | 1 A 3 9 
-8 9 B D | E 4 C F | 1 A 3 6 | 2 7 5 G 
+4 5 3 9 | E A F 1 | 8 B C D | 2 G 7 6 
+B 1 2 A | G 8 9 C | 4 6 E 7 | F D 5 3 
+7 C F 8 | D 6 B 3 | G 9 2 5 | 1 A E 4 
+E G D 6 | 2 7 4 5 | F A 3 1 | B C 8 9 
 - - - - - - - - - - - - - - - - - - - 
-A 6 9 2 | G E B 1 | 8 C F D | 3 5 4 7 
-4 E C 5 | 7 F A D | 3 B 1 9 | G 6 2 8 
-D B 8 1 | 4 2 9 3 | 7 6 5 G | A E F C 
-3 G 7 F | 5 6 8 C | 2 4 E A | B 9 D 1 
+9 4 5 F | 6 E A G | 3 C 7 8 | D B 2 1 
+1 A E 3 | 9 2 C 7 | D G B 6 | 4 5 F 8 
+C B G D | 4 1 3 8 | 9 2 5 F | A E 6 7 
+6 8 7 2 | 5 B D F | 1 4 A E | G 3 9 C 
 
-Trail Pushes: 2679
+Trail Pushes: 2704
 Backtracks: 0
 p:4	q:4
 0 8 0 0 | 6 0 0 0 | 0 5 0 0 | 0 0 0 0 
@@ -516,28 +516,28 @@ p:4	q:4
 0 0 0 0 | 0 0 0 0 | 0 0 0 5 | 1 0 0 0 
 
 p:4	q:4
-B 8 F 7 | 6 E 3 C | G 5 4 A | 9 2 1 D 
-3 4 C 2 | 1 B A G | 9 E 8 D | 6 5 F 7 
-E A 9 6 | 7 D 8 5 | B F 1 2 | 3 G C 4 
-G 1 5 D | 9 2 F 4 | 6 7 C 3 | 8 E B A 
+4 8 3 7 | 6 2 D C | B 5 F G | 9 1 E A 
+2 9 C D | 3 F A G | 4 E 1 8 | 6 5 B 7 
+B E F G | 7 5 1 8 | 2 6 A 9 | 3 C D 4 
+1 5 6 A | 9 E B 4 | 7 3 C D | 8 F G 2 
 - - - - - - - - - - - - - - - - - - - 
-F G B E | 3 9 C 1 | 5 4 2 6 | A D 7 8 
-5 3 6 8 | 4 A E 2 | 7 1 D G | B F 9 C 
-4 9 2 A | D 8 G 7 | 3 C F B | E 6 5 1 
-7 D 1 C | 5 6 B F | E 8 A 9 | G 4 2 3 
+6 4 8 9 | 1 A C E | D G 2 F | 5 3 7 B 
+E G D C | 4 B 3 F | 5 1 7 A | 2 8 6 9 
+F 3 2 5 | D 6 G 7 | 8 9 B 4 | E A C 1 
+7 A B 1 | 5 8 2 9 | E C 6 3 | 4 D F G 
 - - - - - - - - - - - - - - - - - - - 
-2 7 3 9 | A 4 6 D | C B G E | 5 1 8 F 
-6 F 8 5 | C G 7 3 | A D 9 1 | 4 B E 2 
-1 E A G | F 5 2 B | 4 3 7 8 | C 9 D 6 
-D C 4 B | 8 1 9 E | 2 6 5 F | 7 3 A G 
+3 7 5 B | C 4 8 6 | F 2 D 1 | A G 9 E 
+8 C A 6 | E D 5 3 | G 4 9 7 | B 2 1 F 
+D 2 G F | B 9 7 1 | 3 A E 6 | C 4 5 8 
+9 1 4 E | A G F 2 | C 8 5 B | 7 6 3 D 
 - - - - - - - - - - - - - - - - - - - 
-8 6 7 4 | G F 5 9 | 1 2 E C | D A 3 B 
-A B D 1 | E 3 4 8 | F 9 6 7 | 2 C G 5 
-C 5 E 3 | 2 7 1 A | D G B 4 | F 8 6 9 
-9 2 G F | B C D 6 | 8 A 3 5 | 1 7 4 E 
+G 6 1 4 | 8 7 E B | A F 3 C | D 9 2 5 
+A B 9 2 | G C 6 5 | 1 D 8 E | F 7 4 3 
+5 D E 3 | F 1 9 A | 6 7 4 2 | G B 8 C 
+C F 7 8 | 2 3 4 D | 9 B G 5 | 1 E A 6 
 
-Trail Pushes: 2723
-Backtracks: 0
+Trail Pushes: 4909
+Backtracks: 185
 p:5	q:5
 0 0 0 0 0 | 0 0 0 0 0 | 0 0 0 0 0 | 0 0 0 0 0 | 0 0 0 0 0 
 0 0 0 0 0 | 0 0 0 7 0 | 0 G 0 0 0 | 0 0 0 0 0 | 0 0 0 0 0 
@@ -570,38 +570,38 @@ A 0 I 0 0 | 0 0 0 0 0 | 0 0 0 0 0 | 0 0 0 0 0 | 0 0 0 0 0
 0 0 0 0 0 | 0 0 0 0 0 | 0 0 0 0 0 | 0 0 0 0 0 | 0 0 0 0 0 
 
 p:5	q:5
-G M P C L | J 1 H I 3 | 2 O B E 4 | A 5 8 7 K | N F 6 9 D 
-I 6 1 A K | 5 O 8 7 F | 3 G H J D | L N 4 2 9 | C P E B M 
-O D 2 7 N | 9 G 4 E 6 | 5 8 A C F | B P M J 3 | 1 H L I K 
-F 4 9 B J | 2 D L P C | 7 6 N K M | I 1 E H O | 8 3 5 A G 
-E H 5 8 3 | M K A B N | L 1 9 P I | G D F C 6 | 2 7 J O 4 
+9 M D G C | I 1 E 6 K | 2 4 3 J H | A F O P 5 | 7 L 8 N B 
+K 6 1 J O | A 3 8 7 N | P G B E C | 4 2 I L M | 9 5 D F H 
+3 F N 7 8 | D G 4 O 2 | A M 5 9 L | K H B E C | 6 J 1 P I 
+P E H I A | 5 F 9 B L | N K 1 O D | 6 3 7 8 J | G 4 C 2 M 
+5 4 2 B L | M C J P H | F 6 7 8 I | 1 D N 9 G | K A O 3 E 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-D 8 C E 7 | 6 A F K M | I 2 J 9 G | 5 3 1 B 4 | P O H L N 
-B F G I A | 7 2 5 4 H | 8 N C L 3 | O E 9 6 P | J D M K 1 
-M 2 H K 1 | 3 L O D J | B 5 P 4 7 | C I N A 8 | 6 G 9 F E 
-6 3 4 9 P | 8 B C N 1 | M D O H E | K G L F J | 7 A 2 5 I 
-L N O J 5 | G I P 9 E | A K F 1 6 | D 7 H M 2 | 3 C B 4 8 
+C D K L 7 | 9 N H 3 P | I E 4 G 6 | B A J F 1 | M 2 5 8 O 
+B I G A F | 7 M O 4 1 | J 9 P H 3 | 2 E 5 6 8 | C D L K N 
+O N P H J | L 6 2 5 8 | B 7 A F 1 | M C 4 D K | E G 3 I 9 
+1 3 E 9 4 | C D K F J | M 2 O 5 8 | G I L H N | B P 6 7 A 
+2 5 6 8 M | G I B A E | C D K L N | 3 P 9 O 7 | 4 F H J 1 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-2 5 N 4 6 | A P I G 9 | K M E 8 C | 3 F O 1 B | H L 7 D J 
-A C I P O | B 7 M F D | J L 3 N 9 | H 4 2 5 E | K 8 G 1 6 
-8 K 3 L 9 | O J E 6 2 | 4 H 1 5 B | M A 7 G D | F I N C P 
-7 1 B H F | N 8 3 L K | O P G D 2 | 6 J C 9 I | 4 E A M 5 
-J G E M D | C 4 1 H 5 | 6 7 I F A | P 8 K L N | O B 3 2 9 
+H P 4 6 1 | E O A L 5 | D C 8 K 2 | I 7 G M B | J N F 9 3 
+A 8 I 2 5 | J P 7 N M | H F G 3 O | 9 L C 4 E | 1 K B D 6 
+7 L 3 C D | K B G 8 6 | E I 9 1 4 | J 5 H N F | A M 2 O P 
+M G B K N | 3 9 F 1 I | 5 A J P 7 | D 6 8 2 O | L E 4 H C 
+F J 9 O E | 2 4 C H D | 6 L M N B | P K A 1 3 | 8 I G 5 7 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-P I 8 6 H | 1 5 J 2 G | F C D A O | 7 9 3 4 M | L N K E B 
-N O J D C | F M B A L | H 4 7 6 K | 1 2 5 E G | I 9 8 P 3 
-3 L K 5 M | E C 6 8 I | P 9 2 B J | N H A D F | G 1 4 7 O 
-9 A F 1 B | D H 7 3 4 | E I 8 G N | J K P O L | 5 M C 6 2 
-4 E 7 2 G | K N 9 O P | 1 3 5 M L | 8 6 B I C | A J D H F 
+I H C E 6 | F A P 2 O | 9 N L M 5 | 8 G 3 B 4 | D 7 K 1 J 
+D 7 O 4 B | H J M 9 C | K P F 6 A | L 1 E I 2 | 5 3 N G 8 
+N 2 M P G | 4 K 1 E 3 | 7 8 I D J | C O 6 5 H | F B 9 A L 
+8 1 F 3 K | 6 5 L D 7 | O B H 2 G | N 9 P J A | I C M E 4 
+L A J 5 9 | B 8 N I G | 1 3 C 4 E | F M K 7 D | H O P 6 2 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-5 7 6 N E | I 3 G M 8 | 9 F 4 O H | 2 C D P A | B K 1 J L 
-1 9 D G 4 | H E 2 C O | N B K 7 P | F L J 8 5 | M 6 I 3 A 
-H B M 3 8 | L F N J 7 | D A 6 2 5 | 9 O I K 1 | E 4 P G C 
-K J A F 2 | P 6 D 1 B | C E L I 8 | 4 M G 3 H | 9 5 O N 7 
-C P L O I | 4 9 K 5 A | G J M 3 1 | E B 6 N 7 | D 2 F 8 H 
+G C 7 M 3 | N 2 6 J A | 4 H D B 9 | O 8 F K I | P 1 E L 5 
+4 9 5 1 P | O L D K B | 8 J E A F | 7 N M 3 6 | 2 H I C G 
+6 B 8 F H | 1 7 5 G 4 | 3 O 2 I P | E J D C L | N 9 A M K 
+E K A D I | 8 H 3 C 9 | L 1 N 7 M | 5 4 2 G P | O 6 J B F 
+J O L N 2 | P E I M F | G 5 6 C K | H B 1 A 9 | 3 8 7 4 D 
 
-Trail Pushes: 11399
-Backtracks: 2
+Trail Pushes: 848291
+Backtracks: 39504
 p:5	q:5
 0 0 0 0 0 | 0 J 0 0 0 | 0 0 0 0 0 | 7 0 0 0 0 | 0 0 0 0 0 
 0 0 0 0 0 | 0 0 0 0 9 | 0 0 0 0 0 | 0 0 0 0 0 | 0 0 0 0 0 
@@ -634,38 +634,38 @@ B 0 0 0 0 | 0 0 0 0 0 | 0 0 0 0 C | 0 0 0 0 0 | 0 0 0 0 0
 0 0 0 0 0 | 0 0 0 0 0 | 0 H 0 0 0 | 0 0 0 0 K | 0 0 0 0 0 
 
 p:5	q:5
-L 8 G F I | C J A 6 D | K 4 1 P O | 7 2 H M N | 9 5 3 E B 
-K 2 C 5 A | E L F H 9 | J M 7 3 6 | G 4 8 I B | P 1 D N O 
-B 3 E O 1 | M 8 7 4 N | H A 9 2 C | K P 5 L D | 6 J G I F 
-4 6 7 N J | P 2 G 5 O | D I F 8 B | C 1 9 3 E | L K A M H 
-M 9 H P D | I B 1 K 3 | E L N G 5 | A F 6 O J | C 8 7 2 4 
+P E 9 4 N | 8 J D F A | L 5 1 6 B | 7 M C H 2 | 3 G I K O 
+L J I 1 F | N O M C 9 | K G 7 P 3 | E A 8 5 B | H D 6 2 4 
+B 3 8 D H | 1 7 4 G E | A O 9 2 C | 6 K L I J | P F N 5 M 
+A 7 6 M C | 2 5 H P K | D F J I 4 | 3 1 O N G | 8 E L B 9 
+2 O 5 G K | I 6 B 3 L | N 8 H M E | P 4 F D 9 | C A 7 1 J 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-9 5 O M G | 2 7 P 3 1 | I 6 H A K | L N C B F | J E 8 4 D 
-6 N A 8 K | L E J C G | 5 7 D 4 F | O 9 M P H | I 2 1 B 3 
-E J F D H | 5 K O A B | 2 8 C 1 P | 4 G 3 7 I | N 6 M L 9 
-2 7 3 B P | 4 I N D M | L 9 E O G | 5 6 J 8 1 | K F H A C 
-C L I 1 4 | 9 H 6 8 F | M J 3 B N | D E 2 K A | G 7 5 O P 
+F 1 M 2 L | 6 B O H 7 | 9 N D K A | I J 4 3 8 | 5 P E C G 
+J P K A 9 | 4 1 F I 8 | 5 6 E H O | 2 C G B 7 | D L 3 M N 
+O H 3 N 7 | E 9 2 A P | 4 1 C B G | L 5 M K D | 6 I 8 J F 
+6 G 4 C D | 3 K N M 5 | P J L 8 I | 9 F 1 E H | 7 O 2 A B 
+E 5 B I 8 | J L C D G | 7 2 3 F M | O 6 P A N | K H 9 4 1 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-J C 2 4 5 | F 1 8 B 6 | A P O K H | 9 7 G E M | D N I 3 L 
-A I P G 9 | N 5 3 E L | 1 B M C 7 | J D O 2 6 | 4 H F K 8 
-1 M N K 3 | O P 2 J 4 | 6 F I D 9 | 8 H B 5 L | A C E G 7 
-7 F D 6 L | H M K 9 A | 3 G 2 E 8 | I C N 1 4 | O P B 5 J 
-H O 8 E B | G D I 7 C | 4 N L 5 J | P K F A 3 | M 9 6 1 2 
+8 F 2 K 4 | 9 D J E 6 | C A I 1 5 | M B H G 3 | N 7 O P L 
+7 D J 6 P | C 3 L N O | H 9 M 4 K | A E 2 F I | B 1 G 8 5 
+1 B A H M | P G 8 5 F | 6 E 2 7 D | K L N O 4 | 9 C J 3 I 
+3 9 C O I | 7 M 1 K 4 | G B 8 L N | 5 D J 6 P | A 2 F E H 
+G L N 5 E | H A I 2 B | O 3 F J P | 1 8 7 9 C | 4 K M D 6 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-G A 4 L E | 7 N B F 5 | 9 1 J I D | H O K 6 P | 2 3 C 8 M 
-5 1 9 I 2 | D O C P J | B 3 A H E | N M L F 8 | 7 4 K 6 G 
-8 D J 7 F | 1 4 9 I K | P 5 6 L M | 2 3 E G C | B A O H N 
-N P K C M | 6 3 E G H | 7 O 8 F 2 | B I A 4 9 | 5 L J D 1 
-3 B 6 H O | 8 A M L 2 | C K G N 4 | 1 J 7 D 5 | F I P 9 E 
+M A D F 6 | O I 3 1 H | B 4 N E 9 | 8 7 K J L | 2 5 C G P 
+9 C G 7 2 | D P 5 6 M | J K A 3 H | N O E 1 F | I 4 B L 8 
+K 8 H E B | L 4 9 J 2 | 1 P 6 D F | G 3 I C 5 | M N A O 7 
+5 4 P J 1 | A E G 7 N | I L O C 8 | B 9 6 2 M | F 3 D H K 
+I N L 3 O | B F K 8 C | 2 M G 5 7 | 4 H D P A | J 6 1 9 E 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-D K M J N | B F L 2 I | 8 C P 9 3 | 6 A 1 H O | E G 4 7 5 
-O H B A 6 | 3 C 5 N P | G E 4 7 1 | M L I J 2 | 8 D 9 F K 
-F 4 1 3 8 | K 9 D M 7 | N 2 5 6 I | E B P C G | H O L J A 
-I E L 9 C | J G H O 8 | F D K M A | 3 5 4 N 7 | 1 B 2 P 6 
-P G 5 2 7 | A 6 4 1 E | O H B J L | F 8 D 9 K | 3 M N C I 
+D M F 8 G | 5 H 7 4 I | 3 C P A 1 | J N B L O | E 9 K 6 2 
+4 6 7 B 3 | F C P L J | E D K N 2 | H G 9 M 1 | O 8 5 I A 
+H I O 9 A | K N E B 1 | 8 7 5 G J | C 2 3 4 6 | L M P F D 
+N K 1 L J | M 2 A 9 3 | F I 4 O 6 | D P 5 8 E | G B H 7 C 
+C 2 E P 5 | G 8 6 O D | M H B 9 L | F I A 7 K | 1 J 4 N 3 
 
-Trail Pushes: 11536
-Backtracks: 10
+Trail Pushes: 11348
+Backtracks: 0
 p:5	q:5
 0 0 0 0 0 | 0 0 0 0 0 | 0 0 0 0 0 | 0 0 0 0 0 | 0 0 0 0 0 
 0 0 0 0 0 | 0 0 0 0 0 | 0 0 0 0 0 | 0 0 2 0 0 | 0 D 0 0 0 
@@ -698,38 +698,38 @@ D 0 0 0 0 | 0 0 0 0 0 | 0 0 0 0 0 | 0 0 0 0 0 | 0 0 0 0 0
 0 0 0 0 0 | 0 0 0 0 0 | 0 1 0 0 O | 0 0 0 0 0 | 0 0 0 0 0 
 
 p:5	q:5
-C 5 3 2 B | H 1 M 7 J | 9 N O F G | L P 8 D 4 | 6 E I K A 
-H G 9 7 J | E A C 8 P | 6 5 1 B L | F I 2 K 3 | O D N M 4 
-I 8 F E 1 | 9 N 6 5 L | 4 A D 7 K | O J M C H | G P B 2 3 
-K A D L 6 | O G 3 4 F | C M I P 2 | E 9 7 N B | J 5 H 8 1 
-M N O 4 P | D K B 2 I | E 3 8 H J | 5 1 G A 6 | C L F 9 7 
+A L 8 B C | N 1 6 7 F | 5 J 2 D 3 | K 4 O G 9 | H E M P I 
+J 6 N O H | A M G E 5 | F P K 7 B | C L 2 3 I | 8 D 9 1 4 
+E 3 D 2 9 | B J P K C | 4 A 1 I L | H 8 M 7 F | O 5 N G 6 
+G I 7 1 M | O 3 8 4 L | N H 6 9 C | P A E D 5 | J K B 2 F 
+K F P 4 5 | 9 D I 2 H | M 8 E O G | 6 1 N B J | 3 L C A 7 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-F P 5 C H | I O 4 L E | G 6 K 3 1 | A 8 D J 2 | 9 N 7 B M 
-N L 1 G E | A 8 9 6 D | 2 F 5 4 7 | B H P M C | 3 O J I K 
-4 D I J 7 | F M K 3 2 | L 8 9 A B | N O 5 1 G | E C P H 6 
-A 2 8 9 O | J B H P 7 | D C M E N | I F 6 3 K | L G 4 1 5 
-3 B K 6 M | 1 5 G C N | O H J I P | 4 L E 7 9 | D 2 8 A F 
+H P 5 3 A | I O 4 L E | G 6 F J K | 8 2 D 9 1 | B C 7 M N 
+L D I J O | 1 G 3 5 7 | 2 E A B N | 4 F H C M | K P 6 8 9 
+8 9 C M N | F K J P 2 | 1 I O L 4 | 7 E G 6 B | D 3 A 5 H 
+1 2 E F G | 6 B N C M | 7 D H 8 9 | A P 3 5 K | L 4 I J O 
+4 7 K 6 B | D A H 8 9 | 3 5 P C M | J O I L N | F 1 2 E G 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-1 7 E P K | G 4 O N A | 5 B 3 2 C | 9 M I F 8 | H J 6 L D 
-B H M I 4 | 2 3 D F 1 | J 9 6 G 8 | P C N 5 L | A 7 K O E 
-G 6 L 8 C | 7 I J 9 H | 1 K F M A | D E 4 2 O | B 3 5 P N 
-9 F A 5 N | M L 8 E K | P 7 H O D | 6 B 3 G J | I 1 C 4 2 
-2 O J 3 D | C 6 P B 5 | I L E N 4 | K A 1 H 7 | 8 M 9 F G 
+3 J O P 1 | 7 E B 9 D | A 4 M 5 2 | F K 6 I 8 | G N L H C 
+2 A G D I | L N K F O | J C 8 3 E | 1 9 4 H 7 | 6 M P B 5 
+6 C 9 8 7 | 4 I M J 3 | H G D K P | O B 5 N L | 2 A 1 F E 
+F H 4 5 L | 2 C 1 A G | O B N 6 7 | M J P E 3 | 9 I D K 8 
+B N M K E | 8 H 5 6 P | I L 9 F 1 | G D C A 2 | 7 O J 4 3 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-7 K 6 N 8 | 3 H 1 G M | A J P 5 9 | C 4 L E F | 2 I O D B 
-D J C M 3 | P F A I 8 | N O 7 K H | 2 6 9 B 5 | 1 4 G E L 
-L 1 2 O A | 5 9 E J 4 | B D C 6 3 | 7 G K P I | F H M N 8 
-E I B F G | K 7 L D C | 8 4 2 1 M | H 3 J O N | P 6 A 5 9 
-P 9 4 H 5 | B 2 N O 6 | F I G L E | M D A 8 1 | 7 K 3 C J 
+C B 6 N 3 | 5 4 F G J | E K I 1 A | D 7 8 2 O | M 9 H L P 
+D M A G J | C P 9 I 1 | B N 3 2 H | L 6 F 4 E | 5 7 8 O K 
+5 1 L 7 P | H 2 E 3 B | 8 O J M D | N I 9 K G | C F 4 6 A 
+O E 2 9 8 | K 6 7 D A | C F L 4 5 | 3 H J M P | N B G I 1 
+I K F H 4 | M 8 L O N | 9 7 G P 6 | B 5 A 1 C | E 2 3 D J 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-6 E H K L | N J 7 A 3 | M P B C I | 8 2 F 4 D | 5 9 1 G O 
-8 M G B F | 4 D 5 H O | 7 2 L J 6 | 1 K C 9 P | N A E 3 I 
-J 3 N 1 2 | L P I K 9 | H E A 8 F | G 5 O 6 M | 4 B D 7 C 
-O C 7 D I | 6 E F 1 B | K G 4 9 5 | 3 N H L A | M 8 2 J P 
-5 4 P A 9 | 8 C 2 M G | 3 1 N D O | J 7 B I E | K F L 6 H 
+7 4 H C 6 | 3 F A 1 I | K 2 B G J | 5 N L O D | P 8 E 9 M 
+M 8 1 L 2 | G 9 O B 6 | P 3 4 N I | E C K F H | A J 5 7 D 
+N O 3 E D | J 5 2 M K | L 9 7 A 8 | I G 1 P 6 | 4 H F C B 
+9 G J I K | P 7 C H 4 | D M 5 E F | 2 3 B 8 A | 1 6 O N L 
+P 5 B A F | E L D N 8 | 6 1 C H O | 9 M 7 J 4 | I G K 3 2 
 
-Trail Pushes: 11314
-Backtracks: 3
+Trail Pushes: 11755
+Backtracks: 23
 p:5	q:5
 0 0 0 0 0 | 0 0 0 0 0 | 0 0 0 0 0 | 0 0 0 0 0 | 0 0 0 0 0 
 0 0 0 0 0 | 0 0 0 0 0 | 0 0 0 8 0 | 0 0 I 0 0 | 0 0 0 0 0 
@@ -762,38 +762,38 @@ p:5	q:5
 0 G 0 0 0 | 0 0 0 0 0 | 0 0 9 0 0 | 0 0 0 0 0 | 0 0 0 0 0 
 
 p:5	q:5
-6 4 1 M C | O E L 9 P | B 5 K J D | 8 N F 2 A | 7 H 3 G I 
-G B 2 J H | F N 1 7 D | 6 A M 8 9 | 5 3 I C L | 4 P O E K 
-9 3 N A L | I H G 8 5 | C O 4 F 1 | K P J 7 E | 2 M 6 B D 
-O K 5 P F | 3 A M B 6 | 2 G 7 E I | 4 9 1 H D | 8 C L N J 
-E 8 I 7 D | 2 C 4 K J | 3 L H P N | B G 6 M O | F 5 A 1 9 
+D 3 I M 1 | 5 N H P G | C 4 J K A | 8 L F 9 B | 7 O E 6 2 
+B K N E 9 | M 6 1 4 F | 3 L 5 8 O | J P I 2 7 | H G C A D 
+O H L A P | 9 B 2 K I | D G 6 7 F | 1 N M C E | 5 8 J 3 4 
+7 F 5 J 6 | C 3 L 8 O | M 9 E 2 P | A G 4 H D | N 1 B K I 
+4 8 C 2 G | 7 D A E J | H 1 B I N | 5 3 6 K O | F L 9 P M 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-K L E O 3 | 4 5 I C H | P 7 8 2 J | F 6 A B N | 9 G 1 D M 
-N 9 4 D P | M G B 6 K | L H F 1 3 | J 7 C 5 8 | E O I A 2 
-1 7 C H 5 | 9 J O 2 L | I E A K B | 3 D 4 G M | 6 F P 8 N 
-2 F B G 8 | 1 P N A 3 | 9 M D 6 O | E H L K I | 5 7 4 J C 
-I M J 6 A | E 7 8 D F | G 4 5 N C | 9 O 2 P 1 | K 3 H L B 
+8 L D 3 C | A I 5 9 E | G 7 M P 1 | F 6 B J N | 2 H K 4 O 
+N 1 K O F | L P J 3 6 | 4 I 2 H D | 7 A C 5 8 | B 9 G M E 
+A I 7 9 H | O C K N 2 | E 5 8 J B | 3 D G 4 M | 6 P 1 L F 
+P B 2 5 4 | 1 7 M G 8 | 9 A O F 6 | E H K L I | 3 D N J C 
+E J G 6 M | H F B D 4 | K 3 L N C | 9 O 2 P 1 | I A 5 7 8 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-4 P O C E | A F 3 H 2 | 1 J L 9 7 | M 5 G D 6 | N B K I 8 
-M H K 9 B | J D 5 1 N | A C I O E | P L 3 8 4 | G 6 F 2 7 
-3 5 G 8 I | P B K E O | D F 6 M 4 | 2 1 N J 7 | L A C 9 H 
-J A L 2 7 | C 8 6 G 4 | N 3 P 5 H | I K 9 F B | 1 E D M O 
-D N F 1 6 | L M 9 I 7 | K 8 2 B G | H A E O C | P 4 J 5 3 
+L C O P D | G 2 E H K | 8 N 3 5 J | I 1 7 B 6 | M F 4 9 A 
+3 5 4 8 B | J 1 F 7 N | A C I 9 L | D 2 E M K | G 6 H O P 
+9 A J 1 2 | 3 L 6 I B | O P D M 4 | G F H N 5 | 8 C 7 E K 
+G M 6 F 7 | 8 A C O P | 2 B H E K | 4 9 L 3 J | D 5 I 1 N 
+I N E H K | 4 M D 5 9 | 1 6 F G 7 | O C P 8 A | J 3 L 2 B 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-H 2 8 I K | G 9 J 4 C | 7 1 3 A 6 | O E B N P | D L M F 5 
-7 O P E 9 | K 1 H F A | M 2 G C L | D 8 5 I 3 | B J N 4 6 
-A 1 6 B M | 5 L 2 O 8 | E 9 N D F | C J K 4 H | 3 I 7 P G 
-5 J D L G | N 3 E M I | H B O 4 P | A F 7 6 9 | C 8 2 K 1 
-F C 3 N 4 | 7 6 D P B | 5 K J I 8 | L 2 M 1 G | O 9 E H A 
+J P A K E | B H G 1 D | N 2 7 L 9 | 6 8 3 I F | O 4 M C 5 
+2 9 H I O | P K 7 A 3 | 6 F 1 B 8 | M 4 5 G C | L E D N J 
+C 6 1 N 8 | F E 4 J L | 5 O K A M | B 7 9 D H | P I 2 G 3 
+M 4 B 7 5 | 2 9 I 6 C | P D G 3 H | N E J O L | A K F 8 1 
+F D 3 G L | N O 8 M 5 | J E C 4 I | 2 K A 1 P | 9 7 6 B H 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-B 6 H F J | D 2 A 5 G | 8 N E 3 M | 7 4 O L K | I 1 9 C P 
-C D 7 5 1 | 6 K P J E | O I B L 2 | G M H 9 F | A N 8 3 4 
-L I M 3 2 | 8 O 7 N 9 | 4 D C G A | 1 B P E J | H K 5 6 F 
-P E 9 K O | B 4 C 3 M | F 6 1 H 5 | N I 8 A 2 | J D G 7 L 
-8 G A 4 N | H I F L 1 | J P 9 7 K | 6 C D 3 5 | M 2 B O E 
+K 2 9 L A | D J 3 F H | B 8 P 1 E | C I N 6 G | 4 M O 5 7 
+5 7 8 C 3 | E 4 O B 1 | L J A 6 G | H M D F 2 | K N P I 9 
+H E P D J | 6 5 9 L A | I M N C 3 | K B O 7 4 | 1 2 8 F G 
+1 O F B N | I G P C M | 7 K 4 D 2 | L 5 8 A 9 | E J 3 H 6 
+6 G M 4 I | K 8 N 2 7 | F H 9 O 5 | P J 1 E 3 | C B A D L 
 
-Trail Pushes: 11441
-Backtracks: 0
+Trail Pushes: 12017
+Backtracks: 47
 p:5	q:5
 0 0 0 1 0 | 0 0 0 0 0 | 0 0 0 0 0 | 0 0 0 0 0 | 0 0 0 0 0 
 0 0 0 0 0 | 0 0 0 0 0 | 5 0 0 0 0 | 0 0 0 0 0 | 0 0 0 0 0 
@@ -826,35 +826,35 @@ p:5	q:5
 4 0 0 0 0 | 0 D 0 0 0 | 0 0 0 0 0 | 0 0 0 0 0 | 0 0 0 0 0 
 
 p:5	q:5
-K F J 1 C | A 6 3 L P | O M B E I | 9 2 7 D 5 | H 8 G N 4 
-8 G I B L | M 9 E F H | 5 2 1 6 3 | 4 N O A C | 7 P D J K 
-7 O D M 6 | 5 K 2 N J | 8 L 4 F C | G I 3 P H | 1 9 A E B 
-N 4 H P 2 | 1 G 8 O C | 9 K D A 7 | M E L J B | I 5 F 3 6 
-9 3 5 A E | B 7 D 4 I | H N J G P | 1 8 F K 6 | M 2 O L C 
+6 9 H 1 F | 5 I D 7 N | P O 2 K M | 3 E G 8 4 | J C B A L 
+D K 8 3 I | A 1 4 E P | 5 G J N L | C 9 6 H B | M O 7 F 2 
+E 7 2 G 5 | C K O L J | I A 3 B 9 | D F M N 1 | 8 4 6 H P 
+O M B P 4 | 3 G 9 H 6 | 8 E 7 F C | A K J L 2 | I 1 D 5 N 
+N J L A C | M 8 F 2 B | D 1 4 H 6 | I 5 7 O P | 3 9 E G K 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-O 8 1 N B | J L C 2 9 | M F 5 H 6 | 7 G D 3 E | 4 K P I A 
-C A F G 5 | P M H 6 K | L 7 I 1 D | B O 8 N 4 | 2 3 E 9 J 
-P K 3 2 M | 7 E F 5 B | 4 G O J 8 | H A I L 9 | 6 C N D 1 
-E H 7 L I | 3 4 N D O | K P A C 9 | F J 1 6 2 | 8 G B 5 M 
-D 9 4 6 J | 8 I 1 G A | N B E 3 2 | P M C 5 K | O H 7 F L 
+F B M N 2 | H C 3 1 8 | E P 5 9 G | 7 D K 4 O | A 6 J L I 
+A H K C E | 9 B 6 J 7 | O N M D 2 | 1 I L 3 G | F 5 8 P 4 
+I D 5 6 1 | 2 A G K 4 | L F 8 3 7 | B P H J N | C M 9 O E 
+8 P 4 O 7 | F E L D I | K J H C A | 5 M 2 9 6 | G B 1 N 3 
+L 3 J 9 G | P N M O 5 | B I 1 6 4 | F 8 C E A | D 7 2 K H 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-3 C 6 8 9 | H A 5 7 G | I 1 F K E | N D P M O | J L 4 B 2 
-F B K D G | 4 N 6 9 1 | 2 8 L P M | I C J E A | 3 O 5 7 H 
-2 J E I H | C O L P M | 6 A 3 B 4 | 5 7 9 G 8 | F N 1 K D 
-1 L M O N | K F J 8 D | 7 C 9 5 G | 2 H B 4 3 | E 6 I A P 
-A 5 P 7 4 | E 2 B I 3 | J D N O H | 6 1 K F L | C M 9 G 8 
+3 6 1 H J | K 5 N A G | M 7 P L D | E C B 2 F | O 8 4 I 9 
+M O F B D | E 9 1 4 C | N K I 5 J | 8 6 3 P H | 7 L A 2 G 
+2 C A 4 9 | I H 7 P 3 | 6 8 F G B | K L O 1 M | E N 5 J D 
+P I E L N | 6 F J 8 D | 2 C 9 O 3 | G A 4 5 7 | 1 H K B M 
+G 5 7 8 K | L 2 B M O | A 4 E 1 H | N J 9 D I | 6 3 P C F 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-H I N 4 1 | O C K J F | E 3 6 M B | L 5 G 2 7 | A D 8 P 9 
-B 6 L 3 A | G 8 9 M 2 | 1 J P 7 N | O F 4 H D | 5 E K C I 
-5 D O C P | N H I E 7 | A 9 2 8 F | 3 K M B J | L 1 6 4 G 
-J M 2 E K | D P 4 1 6 | G 5 C L O | 8 9 A I N | B 7 3 H F 
-G 7 8 9 F | L B A 3 5 | D 4 H I K | C 6 E 1 P | N J 2 M O 
+C 8 D J O | 4 P K N A | 3 6 B M E | 9 H F G L | 5 2 I 1 7 
+9 F G K A | 8 J 5 B 1 | C 2 L 7 N | M O P I D | 4 E H 3 6 
+5 1 N 2 P | D 7 C I E | H 9 A 4 F | 6 3 8 B J | K G L M O 
+7 4 6 E M | G 3 H F L | 1 D O J I | 2 N 5 A K | 9 P C 8 B 
+H L 3 I B | O 6 2 9 M | G 5 K P 8 | 4 7 1 C E | N A F D J 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-6 1 C H 7 | F 3 O A N | B E M D L | K P 2 9 I | G 4 J 8 5 
-I N 9 J O | 2 1 M K L | P H 8 4 A | E B 5 7 G | D F C 6 3 
-L E B K 8 | I 5 P C 4 | F 6 G 2 J | D 3 N O M | 9 A H 1 7 
-M 2 G 5 D | 9 J 7 H 8 | 3 I K N 1 | A 4 6 C F | P B L O E 
-4 P A F 3 | 6 D G B E | C O 7 9 5 | J L H 8 1 | K I M 2 N 
+B G P D H | 1 L I 6 9 | 7 3 C A O | J 4 N K 5 | 2 F M E 8 
+1 A 9 F L | J M 8 5 K | 4 H D 2 P | O G E 6 3 | B I N 7 C 
+J E I 7 3 | N O A C H | F B 6 8 5 | L 2 D M 9 | P K G 4 1 
+K N C M 6 | 7 4 E 3 2 | J L G I 1 | P B A F 8 | H D O 9 5 
+4 2 O 5 8 | B D P G F | 9 M N E K | H 1 I 7 C | L J 3 6 A 
 
-Trail Pushes: 11391
-Backtracks: 0
+Trail Pushes: 11466
+Backtracks: 3
