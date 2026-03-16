@@ -126,7 +126,9 @@ class BTSolver:
     """
     def norvigCheck ( self ):
 
+        self._init_caches() # Ensure caches are ready
         newly_assigned = dict()
+        trail_push = self.trail.push
 
         if self.trail.size() == 0:
             queue = [v for v in self.network.getVariables() if v.isAssigned()]
@@ -136,15 +138,15 @@ class BTSolver:
 
         def propagate_from(var):
             value = var.getAssignment()
-            for neighbor in self.network.getNeighborsOfVariable(var):
+            for neighbor in self._var_neighbors[var]:
                 if neighbor.isAssigned():
                     if neighbor.getAssignment() == value:
                         return False
                     continue
 
-                neighbor_domain = neighbor.getDomain()
+                neighbor_domain = neighbor.domain
                 if neighbor_domain.contains(value):
-                    self.trail.push(neighbor)
+                    trail_push(neighbor)
                     neighbor.removeValueFromDomain(value)
                     if neighbor.domain.size() == 0:
                         return False
@@ -163,7 +165,7 @@ class BTSolver:
         queue = deque()
         queued_set = set()
         for v in changed_var:
-            for con in self.network.getConstraintsContainingVariable(v):
+            for con in self._var_constraints[v]:
                 if con not in queued_set:
                     queue.append(con)
                     queued_set.add(con)
@@ -177,65 +179,66 @@ class BTSolver:
             #     constraintsToCheck.extend(self.network.getConstraintsContainingVariable(v))
             
 
-                c = queue.popleft()
-                queued_set.remove(c)
+            c = queue.popleft()
+            queued_set.remove(c)
             # for c in constraintsToCheck:
-                assigned_vals = set()
-                val_count = {}   # value -> number of unassigned vars that can take it
-                val_to_var = {}  # value -> the unique unassigned var that can take it (if count == 1)
+            assigned_vals = set()
+            val_count = {}   # value -> number of unassigned vars that can take it
+            val_to_var = {}  # value -> the unique unassigned var that can take it (if count == 1)
 
-                # Examine variables in this constraint
-                for var in c.vars:
-                    if var.isAssigned():
-                        val = var.getAssignment()
-                        # If the same value appears twice in this constraint -> inconsistent
+            # Examine variables in this constraint
+            for var in c.vars:
+                if var.isAssigned():
+                    val = var.getAssignment()
+                    # If the same value appears twice in this constraint -> inconsistent
+                    if val in assigned_vals:
+                        return (newly_assigned, False)
+                    assigned_vals.add(val)
+                else:
+                    # Only look at domain values that are not already used in the unit
+                    for val in var.domain.values:
                         if val in assigned_vals:
+                            continue
+                        if val in val_count:
+                            val_count[val] += 1
+                        else:
+                            val_count[val] = 1
+                            val_to_var[val] = var
+
+            # Now, for any value that appears in exactly one unassigned variable's domain, assign it there
+            # changed_var = set()
+            for val, cnt in val_count.items():
+                if cnt == 1 and val not in assigned_vals:
+                    v = val_to_var[val]
+                    if not v.isAssigned():
+                        for con in self._var_constraints[v]:
+                            if con not in queued_set:
+                                queued_set.add(con)
+                                queue.append(con)
+                        trail_push(v)
+                        v.assignValue(val)
+                        newly_assigned[v] = val
+
+                        # This new assignment must propagate to neighbors via Rule (1)
+                        if not propagate_from(v):
                             return (newly_assigned, False)
-                        assigned_vals.add(val)
-                    else:
-                        # Only look at domain values that are not already used in the unit
-                        for val in var.getDomain().values:
-                            if val in assigned_vals:
-                                continue
-                            cnt = val_count.get(val, 0) + 1
-                            val_count[val] = cnt
-                            if cnt == 1:
-                                val_to_var[val] = var
 
-                # Now, for any value that appears in exactly one unassigned variable's domain, assign it there
-                # changed_var = set()
-                for val, cnt in val_count.items():
-                    if cnt == 1 and val not in assigned_vals:
-                        v = val_to_var[val]
-                        if not v.isAssigned():
-                            for con in self.network.getConstraintsContainingVariable(v):
-                                if con not in queued_set:
-                                    queued_set.add(con)
-                                    queue.append(con)
-                            self.trail.push(v)
-                            v.assignValue(val)
-                            newly_assigned[v] = val
+                        # Check for singleton neighbors (domain size 1) created by propagation
+                        for neighbor in self._var_neighbors[v]:
+                            if not neighbor.isAssigned() and neighbor.domain.size() == 1:
+                                singleton_val = neighbor.domain.values[0]
+                                trail_push(neighbor)
+                                for con in self._var_constraints[neighbor]:
+                                    if con not in queued_set:
+                                        queued_set.add(con)
+                                        queue.append(con)
+                                neighbor.assignValue(singleton_val)
+                                newly_assigned[neighbor] = singleton_val
+                                if not propagate_from(neighbor):
+                                    return (newly_assigned, False)
 
-                            # This new assignment must propagate to neighbors via Rule (1)
-                            if not propagate_from(v):
-                                return (newly_assigned, False)
-
-                            # Check for singleton neighbors (domain size 1) created by propagation
-                            for neighbor in self.network.getNeighborsOfVariable(v):
-                                if not neighbor.isAssigned() and neighbor.domain.size() == 1:
-                                    singleton_val = neighbor.domain.values[0]
-                                    self.trail.push(neighbor)
-                                    for con in self.network.getConstraintsContainingVariable(neighbor):
-                                        if con not in queued_set:
-                                            queued_set.add(con)
-                                            queue.append(con)
-                                    neighbor.assignValue(singleton_val)
-                                    newly_assigned[neighbor] = singleton_val
-                                    if not propagate_from(neighbor):
-                                        return (newly_assigned, False)
-
-                            # Re-scan constraints if assignment made
-                            # changed = True
+                        # Re-scan constraints if assignment made
+                        # changed = True
 
         return (newly_assigned, True)
 
@@ -326,6 +329,17 @@ class BTSolver:
 
         # return (newly_assigned, True)
 
+    def _init_caches ( self ):
+        if not hasattr(self, '_var_neighbors'):
+            self._var_neighbors = {
+                v: self.network.getNeighborsOfVariable(v)
+                for v in self.network.getVariables()
+            }
+            self._var_constraints = {
+                v: self.network.getConstraintsContainingVariable(v)
+                for v in self.network.getVariables()
+            }
+
     """
          Optional TODO: Implement your own advanced Constraint Propagation
 
@@ -333,7 +347,7 @@ class BTSolver:
          your program into a tournament.
      """
     def getTournCC ( self ):
-        return False
+        return self.norvigCheck()
 
     # ==================================================================
     # Variable Selectors
@@ -407,7 +421,36 @@ class BTSolver:
          your program into a tournament.
      """
     def getTournVar ( self ):
-        return None
+        self._init_caches()
+        best_var = None
+        best_domain = float('inf')
+        best_degree = -1
+        for v in self.network.getVariables():
+            if v.isAssigned():
+                continue
+            dom = v.domain.size()
+
+            if dom < best_domain:
+                best_var = v
+                best_domain = dom
+                deg = 0
+                for n in self._var_neighbors[v]:
+                    if not n.isAssigned():
+                        deg += 1
+                best_degree = deg
+            elif dom == best_domain:
+                deg = 0
+                for n in self._var_neighbors[v]:
+                    if not n.isAssigned():
+                        deg += 1
+                if deg > best_degree:
+                    best_var = v
+                    best_degree = deg
+        
+        if best_var is None:
+            return self.getfirstUnassignedVariable()
+
+        return best_var
 
     # ==================================================================
     # Value Selectors
@@ -450,7 +493,17 @@ class BTSolver:
          your program into a tournament.
      """
     def getTournVal ( self, v ):
-        return None
+        self._init_caches()
+        scores = []
+        for val in v.domain.values:
+            affect_count = 0
+            for n in self._var_neighbors[v]:
+                if not n.isAssigned() and n.domain.contains(val):
+                    affect_count += 1
+            scores.append((affect_count, val))
+            
+        scores.sort(key=lambda x: x[0])
+        return [val for _, val in scores]
 
     # ==================================================================
     # Engine Functions
@@ -507,7 +560,7 @@ class BTSolver:
             return self.norvigCheck()[1]
 
         if self.cChecks == "tournCC":
-            return self.getTournCC()
+            return self.getTournCC()[1]
 
         else:
             return self.assignmentsCheck()
