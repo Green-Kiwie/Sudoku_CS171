@@ -131,6 +131,7 @@ class BTSolver:
         self._init_caches() # Ensure caches are ready
         newly_assigned = dict()
         def trail_push(trail):
+            
             if trail not in saved_path:
                 self.trail.push(trail)
                 saved_path.add(trail)
@@ -211,27 +212,27 @@ class BTSolver:
                             val_to_var[val] = var
 
             # if len(self.trail.trailStack) > 10000:
-            seen_pairs = {}
-            for var in c.vars:
-                if not var.isAssigned():
-                    if len(var.domain.values) == 2:
-                        domain_tup = tuple(sorted(var.domain.values))
-                        seen_pairs.setdefault(domain_tup, []).append(var)
+            # seen_pairs = {}
+            # for var in c.vars:
+            #     if not var.isAssigned():
+            #         if len(var.domain.values) == 2:
+            #             domain_tup = tuple(sorted(var.domain.values))
+            #             seen_pairs.setdefault(domain_tup, []).append(var)
 
-            for tup, variables in seen_pairs.items():
-                if len(variables) == 2:
-                    for var in c.vars:
-                        if not var.isAssigned() and var not in variables:
-                            for value in tup:
-                                if var.domain.contains(value):
-                                    trail_push(var)
-                                    var.removeValueFromDomain(value)
-                                    if var.domain.size() == 0:
-                                        return (newly_assigned, False)
-                                    for con in self._var_constraints[var]:
-                                        if con not in queued_set:
-                                            queued_set.add(con)
-                                            queue.append(con)
+            # for tup, variables in seen_pairs.items():
+            #     if len(variables) == 2:
+            #         for var in c.vars:
+            #             if not var.isAssigned() and var not in variables:
+            #                 for value in tup:
+            #                     if var.domain.contains(value):
+            #                         trail_push(var)
+            #                         var.removeValueFromDomain(value)
+            #                         if var.domain.size() == 0:
+            #                             return (newly_assigned, False)
+            #                         for con in self._var_constraints[var]:
+            #                             if con not in queued_set:
+            #                                 queued_set.add(con)
+            #                                 queue.append(con)
 
             # Now, for any value that appears in exactly one unassigned variable's domain, assign it there
             # changed_var = set()
